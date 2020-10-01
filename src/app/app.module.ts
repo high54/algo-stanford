@@ -9,6 +9,7 @@ import { AppMaterialModule } from './app-material.module';
 // Components
 import { AppComponent } from './app.component';
 import { StepOneComponent } from './step-one/step-one.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,11 @@ import { StepOneComponent } from './step-one/step-one.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppRoutingModule,
+    AppMaterialModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,16 @@
-<p>step-one works!</p>
+<section id="step-one">
+    <h2>Step 1 - Quick-find</h2>
+    <p>Quick-find est lent.</p>
+    <p>Chaque modification / recherche demande de vérifier/modifier l'intégralité du tableau au ².</p>
+    <h3>Démonstration</h3>
+    <mat-card class="card">
+        <form [formGroup]="stepOneInitForm" (ngSubmit)="validStepOneInitForm()">
+            <mat-form-field class="example-full-width">
+                <mat-label>Taille du tableau</mat-label>
+                <input matInput formControlName="size" type="number" placeholder="Ex. 12">
+            </mat-form-field>
+            <button mat-raised-button color="primary">Valider</button>
+        </form>
+    </mat-card>
+
+</section>
