@@ -1,18 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Routes
+import { AppRoutingModule } from './app-routing.module';
+// Angular Material modules
+import { AppMaterialModule } from './app-material.module';
+// Components
+import { AppComponent } from './app.component';
+import { StepOneComponent } from './step-one/step-one.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StepOneComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

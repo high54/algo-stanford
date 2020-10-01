@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "algo-stanford"
+  "defaultProject": "algo-stanford",
+  "cli": {
+    "analytics": "7c2031d6-0014-447d-9476-27740639600c"
+  }
 }
